@@ -1,0 +1,210 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --mainColor:#ff0042;
+    --mainWhite:#fff;
+    --mainBlack:#000;
+}
+body{
+    /* background-image: linear-gradient(to bottom right, #212b38, #2D142C); */
+    /* background: #212b38; */
+    background: rgba(128, 128, 128, 0.836);
+    color: var(--mainWhite);
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav{
+    background: rgba(0, 0, 0, 0.658);
+}
+#particles {
+    width: 100%;
+    height: 100vh;
+}
+#particles > div {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    color: var(--mainWhite);
+    transform: translate(-50%,-50%);
+}
+#headname{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+#nav-link:hover{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+i:hover{
+    color: var(--mainColor);
+}
+.special-txt{
+    color: var(--mainColor);
+}
+button{
+    border: none !important;
+}
+.btn{
+    color: var(--mainWhite);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--mainColor) ;
+}
+.btn:hover{
+    color: var(--mainWhite);
+    background: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+.btn:focus{
+    background: var(--mainColor) !important;
+}
+button:focus {
+    outline: none;
+}
+.progress{
+    margin-bottom: 10px;
+}
+#contact a{
+    color: var(--mainWhite);
+    text-decoration: none;
+}
+#contact a:hover{
+    color: var(--mainColor);
+}
+img{
+    height: 250px;
+    width: 100%;
+}
+.col{
+    position: relative;
+    padding: 0;
+}
+.para1 {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.para2{
+    line-height: 1;
+    font-size: 15px;
+    font-weight: bold;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1815167a;
+    }
+
+.col:hover .overlay {
+    opacity: 1;
+    }
+
+.text {
+    color: var(--mainBlack);
+    font-size: 16px;
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    font-weight: bold;
+    text-align: center;
+}
+.text1 {
+    color: var(--mainBlack);
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    text-align: center;
+}
+.cust-icon{
+    position: absolute;
+    top: 10%;
+    right: 10%;   
+}
+
+/* form */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* /form */
+
+/* animations */
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+}
+  
+.bounceIn {
+    animation-duration: 5.75s;
+    animation-name: bounceIn;
+}
+
+/* contact links style */
+.fa-microsoft, .fa-linkedin, .fa-github-square{
+    font-size: 26px;
+}
+.fa-handshake:hover{
+    color: var(--mainColor);
+}
